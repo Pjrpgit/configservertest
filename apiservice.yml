@@ -4,12 +4,7 @@ eureka:
  instance:
   hostname: localhost
 management:
- endpoints:
-  enabled-by-default: false
- endpoint: 
-  info:
-   enabled: true
-  health:
-   enabled: true
-  shutdown:
-   enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
